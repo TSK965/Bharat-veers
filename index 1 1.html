@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Army Gallantry Awards - Tribute to Our Heroes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent-gold: #d4af37;
+            --accent-orange: #ff6b35;
+            --accent-red: #c41e3a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --card-bg: #0f0f23;
+            --success: #ffd700;
+            --pvc-color: #ff6b35;
+            --mvc-color: #e85d04;
+            --vrc-color: #dc2f02;
+            --ac-color: #d4af37;
+            --kc-color: #b8860b;
+            --sc-color: #cd853f;
+            --sena-color: #blue;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-gold);
+            border-radius: 5px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-gold);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent-gold), #b8860b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .logo-text {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--accent-gold);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #0d1b2a 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .hero-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 60% 80%, rgba(196, 30, 58, 0.08) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            padding: 20px;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--accent-gold);
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 24px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 50%, var(--text-primary) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite, fadeInUp 0.8s ease 0.2s both;
+        }
+
+        @keyframes shimmer {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .hero-subtitle {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 8px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator a {
+            color: var(--accent-gold);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        /* Awards Section */
+        .awards-section {
+            background: var(--secondary);
+            border-radius: 20px;
+            margin: 40px 20px;
+            padding: 80px 40px;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .award-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--award-color);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .award-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--award-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(var(--award-rgb), 0.2);
+        }
+
+        .award-card:hover::before {
+            opacity: 1;
+        }
+
+        .award-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--award-color), rgba(0,0,0,0.3));
+            font-size: 40px;
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .award-icon::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            border: 2px solid var(--award-color);
+            opacity: 0.5;
+        }
+
+        .award-name {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .award-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .award-type {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--award-color);
+            margin-top: 16px;
+        }
+
+        /* Search & Filter Section */
+        .filter-section {
+            background: var(--secondary);
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .search-container {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 280px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 16px 24px 16px 50px;
+            background: var(--card-bg);
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: var(--text-primary);
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .search-box input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-gold);
+            font-size: 18px;
+        }
+
+        .filter-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .filter-chip {
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 30px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-chip:hover {
+            border-color: var(--accent-gold);
+            color: var(--text-primary);
+        }
+
+        .filter-chip.active {
+            background: linear-gradient(135deg, var(--accent-gold), #b8860b);
+            color: var(--primary);
+            border-color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .year-filter {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .year-filter label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .year-filter select {
+            padding: 10px 16px;
+            background: var(--card-bg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .year-filter select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        /* Results Count */
+        .results-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 0 4px;
+        }
+
+        .results-count {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .results-count span {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .clear-filters {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            color: var(--accent-gold);
+            cursor: pointer;
+            text-decoration: underline;
+            background: none;
+            border: none;
+        }
+
+        .clear-filters:hover {
+            color: var(--text-primary);
+        }
+
+        /* Recipients Grid */
+        .recipients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 40px 20px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .recipient-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .recipient-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--award-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .recipient-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recipient-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .recipient-card:hover .recipient-image img {
+            transform: scale(1.05);
+        }
+
+        .recipient-placeholder {
+            font-size: 80px;
+            color: rgba(212, 175, 55, 0.3);
+        }
+
+        .award-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--award-color), rgba(0,0,0,0.4));
+            font-size: 20px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .recipient-info {
+            padding: 24px;
+        }
+
+        .recipient-name {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .recipient-rank {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .recipient-award {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(212, 175, 55, 0.15);
+            border-radius: 20px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--award-color);
+            margin-bottom: 12px;
+        }
+
+        .recipient-action {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .recipient-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .recipient-year {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .know-more {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .know-more i {
+            transition: transform 0.3s;
+        }
+
+        .recipient-card:hover .know-more i {
+            transform: translateX(4px);
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 80px 20px;
+            grid-column: 1 / -1;
+        }
+
+        .no-results i {
+            font-size: 64px;
+            color: rgba(212, 175, 55, 0.3);
+            margin-bottom: 24px;
+        }
+
+        .no-results h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .no-results p {
+            color: var(--text-secondary);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            border-radius: 24px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: var(--text-primary);
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: var(--accent-red);
+            transform: rotate(90deg);
+        }
+
+        .modal-header {
+            position: relative;
+            height: 200px;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--award-color);
+            background: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: rgba(212, 175, 55, 0.5);
+            position: relative;
+            margin-top: 50px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .modal-badge {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 20px;
+            background: linear-gradient(135deg, var(--award-color), #b8860b);
+            border-radius: 20px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .modal-body {
+            padding: 40px 32px 32px;
+        }
+
+        .modal-name {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .modal-rank {
+            text-align: center;
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .modal-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .modal-detail {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .modal-detail-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .modal-detail-value {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .modal-section {
+            margin-bottom: 24px;
+        }
+
+        .modal-section-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .modal-citation {
+            background: rgba(212, 175, 55, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-gold);
+            font-style: italic;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .modal-bio {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            padding: 60px 20px 40px;
+            border-top: 2px solid rgba(212, 175, 55, 0.2);
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-section p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 40px auto 0;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .footer-tribute {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            color: var(--accent-gold);
+            margin-bottom: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 56px;
+            }
+
+            .awards-section {
+                padding: 60px 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-wrap: wrap;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding-top: 20px;
+                gap: 15px;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .awards-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            }
+
+            .recipients-grid {
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            }
+
+            .modal-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .hero-badge {
+                font-size: 12px;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            .filter-chips {
+                justify-content: center;
+            }
+
+            .recipient-card {
+                margin: 0 10px;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading Animation */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+
+        .loading i {
+            font-size: 32px;
+            color: var(--accent-gold);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <span class="logo-text">Bharat Veer</span>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <a href="#hero">Home</a>
+                <a href="#awards">Awards</a>
+                <a href="#recipients">Heroes</a>
+                <a href="#footer">Tribute</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Indian Military Gallantry Awards</div>
+            <h1 class="hero-title">Guardians of the Nation</h1>
+            <p class="hero-subtitle">
+                Honoring the brave soldiers who displayed exceptional valor and made the ultimate sacrifice for the nation. Their courage inspires generations.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="21">0</div>
+                    <div class="stat-label">Param Vir Chakra</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="73">0</div>
+                    <div class="stat-label">Ashoka Chakra</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1600">0</div>
+                    <div class="stat-label">Total Gallantry Awards</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#awards">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section" id="awards">
+        <div class="section-header">
+            <h2 class="section-title">Military Awards</h2>
+            <p class="section-subtitle">India's highest military decorations for valor, courage, and sacrifice in service of the nation.</p>
+        </div>
+        <div class="awards-grid" id="awardsGrid">
+            <!-- Award cards will be generated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section" id="recipients">
+        <div class="section-header">
+            <h2 class="section-title">Our Heroes</h2>
+            <p class="section-subtitle">Search and discover the brave souls who earned these prestigious decorations.</p>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search by name...">
+            </div>
+        </div>
+
+        <div class="filter-chips" id="filterChips">
+            <button class="filter-chip active" data-filter="all">All Awards</button>
+            <button class="filter-chip" data-filter="PVC">Param Vir Chakra</button>
+            <button class="filter-chip" data-filter="MVC">Maha Vir Chakra</button>
+            <button class="filter-chip" data-filter="VrC">Vir Chakra</button>
+            <button class="filter-chip" data-filter="AC">Ashoka Chakra</button>
+            <button class="filter-chip" data-filter="KC">Kirti Chakra</button>
+            <button class="filter-chip" data-filter="SC">Shaurya Chakra</button>
+        </div>
+
+        <div class="year-filter">
+            <label>Filter by Era:</label>
+            <select id="yearFilter">
+                <option value="all">All Years</option>
+                <option value="1947-1960">1947-1960</option>
+                <option value="1961-1970">1961-1970</option>
+                <option value="1971-1980">1971-1980</option>
+                <option value="1981-1990">1981-1990</option>
+                <option value="1991-2000">1991-2000</option>
+                <option value="2001-2010">2001-2010</option>
+                <option value="2011-2024">2011-2024</option>
+            </select>
+        </div>
+
+        <div class="results-info">
+            <div class="results-count">Showing <span id="resultsCount">0</span> heroes</div>
+            <button class="clear-filters" onclick="clearFilters()">Clear all filters</button>
+        </div>
+    </section>
+
+    <!-- Recipients Grid -->
+    <div class="recipients-grid" id="recipientsGrid">
+        <!-- Recipient cards will be generated by JavaScript -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-avatar" id="modalAvatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="modal-badge" id="modalBadge"></div>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-name" id="modalName"></h2>
+                <p class="modal-rank" id="modalRank"></p>
+                
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <div class="modal-detail-label">Award</div>
+                        <div class="modal-detail-value" id="modalAward"></div>
+                    </div>
+                    <div class="modal-detail">
+                        <div class="modal-detail-label">Year</div>
+                        <div class="modal-detail-value" id="modalYear"></div>
+                    </div>
+                    <div class="modal-detail">
+                        <div class="modal-detail-label">Unit</div>
+                        <div class="modal-detail-value" id="modalUnit"></div>
+                    </div>
+                    <div class="modal-detail">
+                        <div class="modal-detail-label">Conflict</div>
+                        <div class="modal-detail-value" id="modalConflict"></div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Citation</h4>
+                    <p class="modal-citation" id="modalCitation"></p>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Biography</h4>
+                    <p class="modal-bio" id="modalBio"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About This Tribute</h4>
+                <p>This website is dedicated to the brave soldiers of the Indian Armed Forces who displayed exceptional valor and made the ultimate sacrifice for the nation. Their courage and dedication continue to inspire us all.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.mod.gov.in" target="_blank">Ministry of Defence</a></li>
+                    <li><a href="https://indianarmy.nic.in" target="_blank">Indian Army</a></li>
+                    <li><a href="https://navy.nic.in" target="_blank">Indian Navy</a></li>
+                    <li><a href="https://indianairforce.nic.in" target="_blank">Indian Air Force</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Award Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#awards">Param Vir Chakra</a></li>
+                    <li><a href="#awards">Ashoka Chakra</a></li>
+                    <li><a href="#awards">Maha Vir Chakra</a></li>
+                    <li><a href="#awards">Other Awards</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-tribute">जय हिन्द - Jai Hind</p>
+            <p>This is a tribute to all the bravehearts of the Indian Armed Forces. May their sacrifice never be forgotten.</p>
+            <p style="margin-top: 16px;">© 2024 Indian Army Gallantry Awards Tribute. For educational purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Awards Data
+        const awards = [
+            {
+                id: 'PVC',
+                name: 'Param Vir Chakra',
+                description: 'India\'s highest wartime gallantry award for displaying valor beyond the call of duty during military operations.',
+                icon: 'fa-shield-halved',
+                color: '#ff6b35',
+                rgb: '255, 107, 53',
+                type: 'Wartime',
+                image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyhxNrgAGC2eZ-kyYJ69czGzf9ybWRzNyjUZjr02PZeO7Om2Z2L-gwF-QxFCyODrl_lAoyrqzHPw_lOPomWq_XOkUEZ52M-fHe_U9WSPB7pYQGHSeICOuaKyvIf2BUPz5-m6pQJBvJPKRQ/s280/Pram+Vir+Chakra.jpg'
+            },
+            {
+                id: 'MVC',
+                name: 'Maha Vir Chakra',
+                description: 'The second highest military decoration in India, awarded for valor in the presence of the enemy.',
+                icon: 'fa-shield',
+                color: '#e85d04',
+                rgb: '232, 93, 4',
+                type: 'Wartime',
+                image: 'https://vishwabharatigurukul.com/wp-content/uploads/2021/06/Maha-Vir-Chakra.jpg'
+            },
+            {
+                id: 'VrC',
+                name: 'Vir Chakra',
+                description: 'The third highest wartime gallantry award for acts of valor on the battlefield.',
+                icon: 'fa-medal',
+                color: '#dc2f02',
+                rgb: '220, 47, 2',
+                type: 'Wartime',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Vir_Chakra_ribbon.svg'
+            },
+            {
+                id: 'AC',
+                name: 'Ashoka Chakra',
+                description: 'India\'s highest peacetime gallantry award for acts of exceptional valor away from the battlefield.',
+                icon: 'fa-sun',
+                color: '#d4af37',
+                rgb: '212, 175, 55',
+                type: 'Peacetime',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Ashoka_Chakra_ribbon.svg'
+            },
+            {
+                id: 'KC',
+                name: 'Kirti Chakra',
+                description: 'The second highest peacetime gallantry award for acts of valor away from combat.',
+                icon: 'fa-star',
+                color: '#b8860b',
+                rgb: '184, 134, 11',
+                type: 'Peacetime',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Kirti_Chakra_ribbon.svg'
+            },
+            {
+                id: 'SC',
+                name: 'Shaurya Chakra',
+                description: 'The third highest peacetime gallantry award for acts of courage in dangerous situations.',
+                icon: 'fa-award',
+                color: '#cd853f',
+                rgb: '205, 133, 63',
+                type: 'Peacetime',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Shaurya_Chakra_ribbon.svg'
+            }
+        ];
+
+        // Recipients Data
+        const recipients = [
+            {
+                id: 1,
+                name: 'Major Sundeep Unnikrishnan (Posthumous)',
+                rank: 'Major',
+                award: 'AC',
+                awardName: 'Ashoka Chakra',
+                year: 2008,
+                unit: '51 Special Action Group, National Security Guards',
+                conflict: '2008 Mumbai Attacks',
+                action: 'Led his team in clearing terrorists from the Taj Mahal Palace Hotel, sacrificing his life.',
+                citation: 'He displayed exceptional courage and leadership in the face of grave danger.',
+                bio: 'Major Sundeep Unnikrishnan (1977-2008) was posthumously awarded the Ashoka Chakra for his bravery during the 2008 Mumbai terrorist attacks. He led the NSG team in Operation Black Tornado at the Taj Hotel.',
+                image: 'https://pbs.twimg.com/media/FrRK9MoWYAA3KAv.jpg'
+            },
+            {
+                id: 2,
+                name: 'Captain Vikram Batra',
+                rank: 'Captain',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1999,
+                unit: '13th Battalion, Jammu and Kashmir Rifles',
+                conflict: 'Kargil War, 1999',
+                action: 'Led daring attacks on key enemy positions, capturing Point 5140 and securing Point 4875 despite heavy fire.',
+                citation: 'His exceptional bravery and leadership inspired his men and led to the successful recapture of vital positions.',
+                bio: 'Captain Vikram Batra (1974-1999) was an Indian Army officer posthumously awarded the Param Vir Chakra for his heroism in the Kargil War. He captured Point 5140 and was killed while securing Point 4875, earning the nickname "Sher Shah".',
+                image: 'https://newsarenaindia.com/_next/image?url=https%3A%2F%2Fimages.newsarenaindia.com%2Fremembering-captain-vikram-batrajpg_1757228411253.jpg&w=1920&q=75'
+            },
+            {
+                id: 3,
+                name: 'Captain Manoj Kumar Pandey',
+                rank: 'Captain',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1999,
+                unit: '1st Battalion, 11th Gorkha Rifles',
+                conflict: 'Kargil War, 1999',
+                action: 'Led his company in the daring capture of Jubar Top, despite being wounded, and continued to fight until he made the supreme sacrifice.',
+                citation: 'His exceptional bravery, leadership, and determination inspired his men to achieve victory.',
+                bio: 'Captain Manoj Kumar Pandey (1975-1999) was an Indian Army officer posthumously awarded the Param Vir Chakra for his heroism in the Kargil War. He led the assault on Jubar Top and was killed in action after being severely wounded.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWHWgpgHZ0_dbEvQovIW4WUvaQIADckMXgg&s'
+            },
+            {
+                id: 4,
+                name: 'Major Raju Naidu',
+                rank: 'Major',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1987,
+                unit: '12th Battalion, Madras Regiment',
+                conflict: 'Operation Pawan',
+                action: 'Led his company in a fierce battle against Sri Lankan terrorists in Jaffna, displaying extraordinary valor.',
+                citation: 'His leadership and gallantry saved many lives of his men.',
+                bio: 'Major Raju Naidu (1960-1987) was commissioned into the Indian Army in 1981. On 11 November 1987, during Operation Pawan in Sri Lanka, his company was tasked to clear enemy bunkers. He led from the front and eliminated several terrorists before being martyred.',
+                image: 'https://blogger.googleusercontent.com/img/a/AVvXsEiH3qSwQemadzkwwdAu6gdbyWCJSnbIP2LaLiqBBEFzXbQXaha54OazMesJcPL8CW1LWEWj8Zu0wpziKzWdi9sWYHyndfOzmItxseGbmaCA9VFwIPZ4VF5ZgkFxqPQSYWuusG3wyPIx3_0bcw4bfC5rxtxagTR84FPtd0g0O96xCpNLOXxcUASFHf_3cw'
+            },
+            {
+                id: 5,
+                name: 'Rifleman Jaswant Singh Rautela',
+                rank: 'Rifleman',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1962,
+                unit: '8th Battalion, The Garhwal Rifles',
+                conflict: 'Sino-Indian War of 1962',
+                action: 'Held a strategic pass against Chinese forces for 72 hours, fighting to the last man.',
+                citation: 'His bravery and sacrifice are legendary in Indian military history.',
+                bio: 'Rifleman Jaswant Singh Rautela (1938-1962) was born in Uttarakhand. During the Sino-Indian War, his battalion was tasked with holding the Nuranang (Bara Hoti) pass. He and his team fought bravely against overwhelming Chinese forces. He was captured but refused to surrender, showing immense courage.',
+                image: 'https://kiddaan.com/wp-content/uploads/2025/08/jaswantji.jpg'
+            },
+            {
+                id: 6,
+                name: 'Subedar Major & Honorary Captain Yogendra Singh Yadav (Retd)',
+                rank: 'Subedar Major & Honorary Captain',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1999,
+                unit: '18th Battalion, The Grenadiers',
+                conflict: 'Kargil War, 1999',
+                action: 'Single-handedly destroyed enemy bunkers and led the capture of Tiger Hill, displaying extraordinary courage.',
+                citation: 'His bravery and determination were instrumental in the recapture of Tiger Hill.',
+                bio: 'Subedar Major Yogendra Singh Yadav was awarded the Param Vir Chakra for his heroism in the Kargil War. He destroyed enemy bunkers and captured Tiger Hill. He was later promoted to Honorary Captain and retired from service.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-FFzfc6FlFXPymPwxQhE8mLAkQnev5j59A&s'
+            },
+            {
+                id: 7,
+                name: 'Second Lieutenant Arun Khetarpal',
+                rank: 'Second Lieutenant',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1971,
+                unit: '17th Battalion, The Poona Horse',
+                conflict: 'Indo-Pakistani War of 1971',
+                action: 'With just three tanks, he attacked a Pakistani brigade and destroyed several tanks, fighting till his last breath.',
+                citation: 'He displayed courage and leadership of the highest order.',
+                bio: 'Second Lieutenant Arun Khetarpal (1949-1971) was commissioned into the Indian Army in 1971. On 16 December 1971, during the Battle of Basantar in Pakistan, his regiment was attacked by a larger Pakistani force. He led his tanks in a daring counter-attack, destroying several enemy tanks before being martyred.',
+                image: 'https://headlineshunt.com/news-images/second-lieutenant-param-vir-chakra-arun-khetarpal.jpg'
+            },
+            {
+                id: 8,
+                name: 'Major Shaitan Singh',
+                rank: 'Major',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1962,
+                unit: '13th Battalion, Kumaon Regiment',
+                conflict: 'Sino-Indian War of 1962',
+                action: 'Defended the forward posts in Ladakh against Chinese attacks with his company.',
+                citation: 'He fought gallantly and made the supreme sacrifice.',
+                bio: 'Major Shaitan Singh (1923-1962) was born in Rajasthan. During the Sino-Indian War, his company was deployed at Rezang La in Ladakh. Despite being outnumbered and outgunned, he led his men in defending the position with great valor.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXJ5kCzyxmAO8H-9THHluJ0t-9c6gyFSOCw&s'
+            },
+            {
+                id: 9,
+                name: 'Naib Subedar Bana Singh',
+                rank: 'Naib Subedar',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1987,
+                unit: '8th Battalion, Jammu and Kashmir Light Infantry',
+                conflict: 'Siachen Glacier Operation',
+                action: 'Led his company in capturing the strategic peak at Siachen at 21,000 feet - the highest battlefield in the world.',
+                citation: 'His leadership and determination led to the successful capture of the enemy position.',
+                bio: 'Naib Subedar Bana Singh (1949-2006) became famous for Operation Rajiv in 1986 when his company captured the Siachen Glacier region from Pakistani forces. He was the first Indian soldier to receive the Param Vir Chakra for action in Siachen.',
+                image: 'https://i0.wp.com/satyameva-jayate.org/wp-content/uploads/2010/06/Nb-Subedar-Bana-Singh.jpg'
+            },
+            {
+                id: 10,
+                name: 'Company Quartermaster Havildar Abdul Hamid (Posthumous)',
+                rank: 'Company Quartermaster Havildar',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1965,
+                unit: '4th Battalion, The Grenadiers',
+                conflict: 'Indo-Pakistani War of 1965',
+                action: 'Destroyed several Pakistani tanks with his recoilless rifle while under heavy fire, sacrificing his life.',
+                citation: 'He used his recoilless rifle with great courage, destroying 3 tanks and halting the enemy advance before succumbing to his injuries.',
+                bio: 'CQM Havildar Abdul Hamid (1933-1965) was posthumously awarded the Param Vir Chakra for his actions during the Battle of Asal Uttar. Despite being wounded, he kept firing his weapon until he neutralized multiple enemy tanks, ultimately sacrificing his life.',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Havildar_Abdul_Hamid.jpg'
+            }
+        ];
+
+        // Additional recipients with more detail
+        const additionalRecipients = [
+            {
+                id: 11,
+                name: 'Major Hoshiar Singh',
+                rank: 'Major',
+                award: 'MVC',
+                awardName: 'Maha Vir Chakra',
+                year: 1971,
+                unit: '9th Battalion, The Grenadiers',
+                conflict: 'Indo-Pakistani War of 1971',
+                action: 'Led his company in capturing enemy bunkers in the western sector.',
+                citation: 'His leadership was instrumental in the success of the operation.',
+                bio: 'Major Hoshiar Singh displayed exceptional courage during the 1971 war. He led his men through intense enemy fire and captured the objective.',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Major_Hoshiar_Singh.jpg'
+            },
+            {
+                id: 12,
+                name: 'Major Somnath Sharma (Posthumous)',
+                rank: 'Major',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1947,
+                unit: '4th Battalion, The Kumaon Regiment',
+                conflict: 'Indo-Pakistani War of 1947',
+                action: 'Held his post against overwhelming enemy forces, fighting to the last bullet and refusing to withdraw despite being mortally wounded.',
+                citation: 'His staunch defense of the Uri sector enabled the safe withdrawal of his men. He was the first recipient of the Param Vir Chakra.',
+                bio: 'Major Somnath Sharma (1923–1947) was the first Indian soldier to be awarded the Param Vir Chakra posthumously. During the 1947 war, he led his troops in the Uri sector and sacrificed his life defending his position against Pakistani invaders.',
+                image: 'https://pbs.twimg.com/media/EPlZUXJU0AASaZz.jpg'
+            },
+            {
+                id: 13,
+                name: 'Company Havildar Major Chakravathi',
+                rank: 'Company Havildar Major',
+                award: 'AC',
+                awardName: 'Ashoka Chakra',
+                year: 2019,
+                unit: 'Central Reserve Police Force',
+                conflict: 'Counter Terrorism Operations',
+                action: 'Neutralized multiple terrorists in a fierce encounter in Jammu & Kashmir.',
+                citation: 'His courage saved many lives.',
+                bio: 'Company Havildar Major Chakravathi was part of a special operation team. He displayed exceptional bravery in eliminating terrorists.',
+                image: 'https://upload.wikimedia.org/wikipedia/en/3/3f/Piru_Singh_PVC.jpg'
+            },
+            {
+                id: 14,
+                name: 'Inspector General B. S. Sahrawat',
+                rank: 'Inspector General',
+                award: 'KC',
+                awardName: 'Kirti Chakra',
+                year: 2018,
+                unit: 'Sashastra Seema Bal',
+                conflict: 'Naxal Operations',
+                action: 'Led operations against Naxalites in Chhattisgarh.',
+                citation: 'His leadership was crucial in the success of the operation.',
+                bio: 'Inspector General Sahrawat has served in various Naxal-affected areas and led multiple successful operations.',
+                image: 'https://pbs.twimg.com/profile_images/1269553910634536960/PdzATia7_400x400.jpg'
+            },
+            {
+                id: 15,
+                name: 'Deputy Superintendent of Police',
+                rank: 'DSP',
+                award: 'SC',
+                awardName: 'Shaurya Chakra',
+                year: 2020,
+                unit: 'Jammu and Kashmir Police',
+                conflict: 'Counter Terrorism',
+                action: 'Led encounter operations against terrorists.',
+                citation: 'His bravery was praised by all.',
+                bio: 'The DSP led multiple successful counter-terrorism operations in the region.',
+                image: 'https://media.assettype.com/tnm%2Fimport%2Fsites%2Fdefault%2Ffiles%2FDavinderSingh.jpg?w=480&auto=format%2Ccompress&fit=max'
+            },
+            {
+                id: 16,
+                name: 'Havildar Hangpan Dada (Posthumous)',
+                rank: 'Havildar',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1962,
+                unit: '9th Battalion, Punjab Regiment',
+                conflict: 'Sino-Indian War of 1962',
+                action: 'Single-handedly attacked and destroyed an enemy machine gun post, sacrificing his life.',
+                citation: 'He charged the enemy position with grenades and bayonet, eliminating the threat.',
+                bio: 'Havildar Hangpan Dada (1939-1962) was posthumously awarded the Param Vir Chakra for his bravery in the 1962 Sino-Indian War. He attacked an enemy machine gun nest alone, allowing his comrades to advance.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt3Vv2Wn3QOHZ8vfDgpTV7h3naORMzHHjnPg&s'
+            },
+            {
+                id: 17,
+                name: 'Flying Officer Nirmal Jit Singh Sekhon',
+                rank: 'Flying Officer',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1971,
+                unit: 'Indian Air Force',
+                conflict: 'Indo-Pakistani War of 1971',
+                action: 'Shot down a Pakistani aircraft and made the ultimate sacrifice.',
+                citation: 'He displayed exceptional bravery and professionalism.',
+                bio: 'Flying Officer Nirmal Jit Singh Sekhon was the only Air Force officer to be awarded the Param Vir Chakra.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1FSVKJONkixV4Mq8E7dZk6DzwlMa1rqcIQ&s'
+            },
+            {
+                id: 18,
+                name: 'Lance Naik Murali Naik',
+                rank: 'Lance Naik',
+                award: 'AC',
+                awardName: 'Ashoka Chakra',
+                year: 2016,
+                unit: '42nd Battalion, The Rashtriya Rifles',
+                conflict: 'Counter Insurgency Operations',
+                action: 'Displayed exceptional courage during an encounter with terrorists in Jammu and Kashmir.',
+                citation: 'His bravery and leadership were exemplary.',
+                bio: 'Lance Naik Murali Naik, from Andhra Pradesh, was awarded the Ashoka Chakra for his gallantry in counter-insurgency operations.',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtkLbJ7c6j9ayRsPhHJq3BBiNCZZPM87Fjg&s'
+            },
+            {
+                id: 19,
+                name: 'Naib Subedar Chuni Lal (Posthumous)',
+                rank: 'Naib Subedar',
+                award: 'PVC',
+                awardName: 'Param Vir Chakra',
+                year: 1948,
+                unit: '1st Battalion, The Sikh Regiment',
+                conflict: 'Indo-Pakistani War of 1947-1948',
+                action: 'Led his platoon in capturing enemy positions in the Zojila sector, sacrificing his life.',
+                citation: 'He led from the front and was killed while charging the enemy.',
+                bio: 'Naib Subedar Chuni Lal (1922-1948) was posthumously awarded the Param Vir Chakra for his bravery in the 1947-1948 war. He led his men in capturing key positions in Kashmir.',
+                image: 'https://media.licdn.com/dms/image/v2/D5622AQHVwSBKbnasag/feedshare-shrink_800/B56ZcfLNT1HgAg-/0/1748574805159?e=2147483647&v=beta&t=o50kLJT766fn5uQ2V6zFD25StvIpsTLxU94cw-jOX0c'
+            },
+            {
+                id: 20,
+                name: 'Lance Naik Nazir Ahmad Wani (Posthumous)',
+                rank: 'Lance Naik',
+                award: 'AC',
+                awardName: 'Ashoka Chakra',
+                year: 1994,
+                unit: '13th Battalion, The Jammu and Kashmir Rifles',
+                conflict: 'Counter Insurgency Operations in Jammu and Kashmir',
+                action: 'Single-handedly attacked a terrorist hideout, sacrificing his life.',
+                citation: 'He charged the enemy position and eliminated multiple terrorists.',
+                bio: 'Lance Naik Nazir Ahmad Wani (1971-1994) was posthumously awarded the Ashoka Chakra for his bravery in counter-insurgency operations. He was the first Kashmiri to receive the Ashoka Chakra.',
+                image: 'https://pbs.twimg.com/media/G6kMkUabwAcmTKu.jpg'
+            },
+            {
+                id: 21,
+                name: 'TADI NAGARJUNA RAO',
+                rank: 'Head Constable',
+                award: 'GM',
+                awardName: 'Medal for gallantry',
+                year: 2006,
+                unit: '65 Battalion, The Air Wing Regiment',
+                conflict: 'Cadre Restructing Conflicts',
+                action: 'Led his company in capturing enemy positions in the Battle of Chowk',
+                citation: 'His bravery was notable.',
+                bio: 'Head Constable Tadi Nagarjuna Rao served with distinction.',
+                image: 'data:image/png;base64,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'
+            }
+        ];
+
+        // Combine all recipients
+        const allRecipients = [...recipients, ...additionalRecipients];
+
+        // Current filter state
+        let currentFilter = 'all';
+        let currentSearch = '';
+        let currentYear = 'all';
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAwards();
+            renderRecipients();
+            setupEventListeners();
+            animateCounters();
+        });
+
+        // Render Awards
+        function renderAwards() {
+            const grid = document.getElementById('awardsGrid');
+            grid.innerHTML = awards.map(award => `
+                <div class="award-card" style="--award-color: ${award.color}; --award-rgb: ${award.rgb}" onclick="filterByAward('${award.id}')">
+                    <div class="award-icon" style="background: linear-gradient(135deg, ${award.color}, rgba(0,0,0,0.3))">
+                        <i class="fas ${award.icon}"></i>
+                    </div>
+                    <h3 class="award-name">${award.name}</h3>
+                    <p class="award-description">${award.description}</p>
+                    <span class="award-type">${award.type}</span>
+                </div>
+            `).join('');
+        }
+
+        // Render Recipients
+        function renderRecipients() {
+            const grid = document.getElementById('recipientsGrid');
+            const filtered = filterRecipients();
+            
+            document.getElementById('resultsCount').textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search"></i>
+                        <h3>No Heroes Found</h3>
+                        <p>Try adjusting your search or filters to find more heroes.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(recipient => {
+                const award = awards.find(a => a.id === recipient.award);
+                const color = award ? award.color : '#d4af37';
+                const hasImage = recipient.image && recipient.image.trim() !== '';
+                
+                return `
+                    <div class="recipient-card" style="--award-color: ${color}" onclick="openModal(${recipient.id})">
+                        <div class="recipient-image">
+                            ${hasImage ? 
+                                `<img src="${recipient.image}" alt="${recipient.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'recipient-placeholder\\'><i class=\\'fas fa-user\\'></i></div>'">` : 
+                                `<div class="recipient-placeholder"><i class="fas fa-user"></i></div>`
+                            }
+                            <div class="award-badge" style="background: linear-gradient(135deg, ${color}, rgba(0,0,0,0.4))">
+                                <i class="fas ${award ? award.icon : 'fa-medal'}"></i>
+                            </div>
+                        </div>
+                        <div class="recipient-info">
+                            <h3 class="recipient-name">${recipient.name}</h3>
+                            <p class="recipient-rank">${recipient.rank}</p>
+                            <div class="recipient-award" style="background: ${color}20; color: ${color}">
+                                <i class="fas ${award ? award.icon : 'fa-medal'}"></i>
+                                ${recipient.awardName}
+                            </div>
+                            <p class="recipient-action">${recipient.action}</p>
+                            <div class="recipient-meta">
+                                <span class="recipient-year">${recipient.year}</span>
+                                <span class="know-more">Know More <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter Recipients
+        function filterRecipients() {
+            return allRecipients.filter(recipient => {
+                const matchesSearch = currentSearch === '' || 
+                    recipient.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    recipient.rank.toLowerCase().includes(currentSearch.toLowerCase());
+                
+                const matchesFilter = currentFilter === 'all' || recipient.award === currentFilter;
+                
+                let matchesYear = true;
+                if (currentYear !== 'all') {
+                    const [start, end] = currentYear.split('-').map(Number);
+                    matchesYear = recipient.year >= start && recipient.year <= end;
+                }
+                
+                return matchesSearch && matchesFilter && matchesYear;
+            });
+        }
+
+        // Event Listeners
+        function setupEventListeners() {
+            // Search input
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                currentSearch = e.target.value;
+                renderRecipients();
+            });
+
+            // Filter chips
+            document.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    currentFilter = chip.dataset.filter;
+                    renderRecipients();
+                });
+            });
+
+            // Year filter
+            document.getElementById('yearFilter').addEventListener('change', (e) => {
+                currentYear = e.target.value;
+                renderRecipients();
+            });
+
+            // Modal close on outside click
+            document.getElementById('modal').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('modal')) {
+                    closeModal();
+                }
+            });
+
+            // Keyboard escape to close modal
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
+
+        // Filter by award type
+        function filterByAward(awardId) {
+            currentFilter = awardId;
+            
+            // Update filter chips UI
+            document.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.classList.remove('active');
+                if (chip.dataset.filter === awardId) {
+                    chip.classList.add('active');
+                }
+            });
+            
+            renderRecipients();
+            
+            // Scroll to recipients section
+            document.getElementById('recipients').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Open modal
+        function openModal(id) {
+            const recipient = allRecipients.find(r => r.id === id);
+            if (!recipient) return;
+
+            const award = awards.find(a => a.id === recipient.award);
+            const color = award ? award.color : '#d4af37';
+
+            document.getElementById('modalName').textContent = recipient.name;
+            document.getElementById('modalRank').textContent = recipient.rank;
+            document.getElementById('modalAward').textContent = recipient.awardName;
+            document.getElementById('modalYear').textContent = recipient.year;
+            document.getElementById('modalUnit').textContent = recipient.unit || 'N/A';
+            document.getElementById('modalConflict').textContent = recipient.conflict || 'N/A';
+            document.getElementById('modalCitation').textContent = recipient.citation || recipient.action;
+            document.getElementById('modalBio').textContent = recipient.bio || recipient.action;
+            document.getElementById('modalBadge').textContent = recipient.awardName;
+            document.getElementById('modalBadge').style.background = `linear-gradient(135deg, ${color}, #b8860b)`;
+
+            // Update avatar border color
+            const avatar = document.getElementById('modalAvatar');
+            avatar.style.borderColor = color;
+            avatar.style.setProperty('--award-color', color);
+
+            document.getElementById('modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Clear all filters
+        function clearFilters() {
+            currentFilter = 'all';
+            currentSearch = '';
+            currentYear = 'all';
+
+            document.getElementById('searchInput').value = '';
+            document.getElementById('yearFilter').value = 'all';
+            
+            document.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.classList.remove('active');
+                if (chip.dataset.filter === 'all') {
+                    chip.classList.add('active');
+                }
+            });
+
+            renderRecipients();
+        }
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
+
+        // Animate counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                setTimeout(updateCounter, 500);
+            });
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '';
+            }
+        });
+    </script>
+</body>
+</html>
